@@ -3,11 +3,12 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
-    --ink: #2e2a24;
-    --muted: #6b6456;
-    --accent: #8a6d3b;
-    --line: #e6ddc9;
-    --chip: #f3ead6;
+    --ink: #23281f;
+    --muted: #5a6054;
+    --accent: #14362e;
+    --sand: #c5a86a;
+    --line: #dfe3dd;
+    --chip: #eef2ec;
   }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body {
@@ -28,28 +29,27 @@
   }
   /* Sidebar */
   .side {
-    background: #f2ebd8;
-    color: #4a4234;
+    background: var(--accent);
+    color: #e3ede4;
     padding: 24px 18px;
-    border-right: 1px solid #e6ddc9;
   }
-  .side h1 { font-size: 21pt; line-height: 1.05; letter-spacing: .5px; color: #3a3226; }
-  .side .role { margin-top: 6px; font-size: 9.5pt; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; }
+  .side h1 { font-size: 21pt; line-height: 1.05; letter-spacing: .5px; color: #fff; }
+  .side .role { margin-top: 6px; font-size: 9.5pt; color: var(--sand); text-transform: uppercase; letter-spacing: 1.5px; }
   .side section { margin-top: 22px; }
   .side h2 {
     font-size: 10pt; text-transform: uppercase; letter-spacing: 1.5px;
-    color: var(--accent); border-bottom: 1px solid rgba(138,109,59,.35);
+    color: #fff; border-bottom: 1px solid var(--sand);
     padding-bottom: 5px; margin-bottom: 9px;
   }
-  .contact div { margin-bottom: 7px; font-size: 9.5pt; word-break: break-word; color: #5a5243; }
-  .skill { margin-bottom: 7px; font-size: 9.5pt; color: #4a4234; }
-  .lang { display: flex; justify-content: space-between; font-size: 9.5pt; margin-bottom: 6px; color: #4a4234; }
+  .contact div { margin-bottom: 7px; font-size: 9.5pt; word-break: break-word; color: #cfe0d4; }
+  .skill { margin-bottom: 7px; font-size: 9.5pt; color: #dcebe0; }
+  .lang { display: flex; justify-content: space-between; font-size: 9.5pt; margin-bottom: 6px; color: #dcebe0; }
   /* Main */
   .main { padding: 26px 26px 24px; }
   .main section { margin-bottom: 17px; }
   .main h2 {
     font-size: 11.5pt; text-transform: uppercase; letter-spacing: 1.2px;
-    color: var(--accent); border-bottom: 2px solid var(--line);
+    color: var(--accent); border-bottom: 2px solid var(--sand);
     padding-bottom: 4px; margin-bottom: 10px;
   }
   .summary { font-size: 10pt; color: var(--muted); text-align: justify; }
