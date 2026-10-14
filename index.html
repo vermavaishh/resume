@@ -13,61 +13,60 @@
   body {
     font-family: "Calibri", "Segoe UI", Arial, sans-serif;
     color: var(--ink);
-    line-height: 1.28;
+    line-height: 1.4;
     background: #f3f4f8;
     font-size: 10.5pt;
   }
   .page {
     width: 210mm;
-    height: 290mm;
-    overflow: hidden;
-    margin: 0 auto;
+    min-height: 297mm;
+    margin: 12px auto;
     background: #fff;
     display: grid;
     grid-template-columns: 62mm 1fr;
+    box-shadow: 0 4px 24px rgba(0,0,0,.12);
   }
   /* Sidebar */
   .side {
     background: var(--accent);
     color: #eef1f8;
-    padding: 22px 16px;
+    padding: 24px 18px;
   }
-  .side h1 { font-size: 20pt; line-height: 1.05; letter-spacing: .5px; color: #fff; }
-  .side .role { margin-top: 6px; font-size: 9pt; color: #b9c2de; text-transform: uppercase; letter-spacing: 1.5px; }
-  .side section { margin-top: 12px; }
+  .side h1 { font-size: 21pt; line-height: 1.05; letter-spacing: .5px; color: #fff; }
+  .side .role { margin-top: 6px; font-size: 9.5pt; color: #b9c2de; text-transform: uppercase; letter-spacing: 1.5px; }
+  .side section { margin-top: 22px; }
   .side h2 {
     font-size: 10pt; text-transform: uppercase; letter-spacing: 1.5px;
     color: #fff; border-bottom: 1px solid rgba(255,255,255,.28);
     padding-bottom: 5px; margin-bottom: 9px;
   }
-  .contact div { margin-bottom: 5px; font-size: 9.2pt; word-break: break-word; color: #dfe4f2; }
-  .skill { margin-bottom: 4.5px; font-size: 9pt; color: #e7ebf6; }
-  .lang { display: flex; justify-content: space-between; font-size: 9pt; margin-bottom: 4px; color: #e7ebf6; }
+  .contact div { margin-bottom: 7px; font-size: 9.5pt; word-break: break-word; color: #dfe4f2; }
+  .skill { margin-bottom: 7px; font-size: 9.5pt; color: #e7ebf6; }
+  .lang { display: flex; justify-content: space-between; font-size: 9.5pt; margin-bottom: 6px; color: #e7ebf6; }
   /* Main */
-  .main { padding: 20px 24px 14px; }
-  .main section { margin-bottom: 8px; }
+  .main { padding: 26px 26px 24px; }
+  .main section { margin-bottom: 17px; }
   .main h2 {
-    font-size: 11pt; text-transform: uppercase; letter-spacing: 1.2px;
+    font-size: 11.5pt; text-transform: uppercase; letter-spacing: 1.2px;
     color: var(--accent); border-bottom: 2px solid var(--line);
-    padding-bottom: 3px; margin-bottom: 7px;
+    padding-bottom: 4px; margin-bottom: 10px;
   }
-  .summary { font-size: 9.4pt; color: var(--muted); text-align: justify; }
-  .job { margin-bottom: 8px; }
+  .summary { font-size: 10pt; color: var(--muted); text-align: justify; }
+  .job { margin-bottom: 12px; }
   .job:last-child { margin-bottom: 0; }
   .job-head { display: flex; justify-content: space-between; align-items: baseline; }
-  .job-title { font-weight: 700; font-size: 10pt; }
+  .job-title { font-weight: 700; font-size: 10.5pt; }
   .job-title .company { color: var(--accent); }
-  .job-date { font-size: 8.5pt; color: var(--muted); white-space: nowrap; padding-left: 10px; }
-  .job ul { margin: 3px 0 0 15px; }
-  .job li { font-size: 9pt; color: var(--muted); margin-bottom: 2px; }
-  .edu { margin-bottom: 7px; }
+  .job-date { font-size: 8.8pt; color: var(--muted); white-space: nowrap; padding-left: 10px; }
+  .job ul { margin: 4px 0 0 16px; }
+  .job li { font-size: 9.6pt; color: var(--muted); margin-bottom: 3px; }
+  .edu { margin-bottom: 10px; }
   .edu .deg { font-weight: 700; font-size: 10pt; }
   .edu .school { font-size: 9.5pt; color: var(--muted); }
   .edu .yr { font-size: 8.8pt; color: var(--muted); }
-  @page { size: A4; margin: 0; }
   @media print {
     body { background: #fff; font-size: 10pt; }
-    .page { margin: 0; box-shadow: none; width: 210mm; height: 296mm; min-height: 0; overflow: hidden; }
+    .page { margin: 0; box-shadow: none; width: 100%; min-height: auto; }
   }
 </style>
 
@@ -85,9 +84,8 @@
 
     <section>
       <h2>Skills</h2>
-      <div class="skill">Landing Page &amp; Funnel Development</div>
       <div class="skill">AI Marketing Automation</div>
-      <div class="skill">Meta Pixel &amp; Webhook Automation</div>
+      <div class="skill">AI-Built Landing Pages &amp; Funnels</div>
       <div class="skill">Meta / Facebook Ads Management</div>
       <div class="skill">Social Media &amp; Content Strategy</div>
       <div class="skill">Canva &amp; AI Design Tools</div>
@@ -109,8 +107,6 @@
       <div class="skill">Claude (Claude Code &amp; AI Agents)</div>
       <div class="skill">ChatGPT / AI Assistants</div>
       <div class="skill">Meta Ads Manager</div>
-      <div class="skill">GitHub Pages / Web Deploy</div>
-      <div class="skill">Pabbly (Webhooks)</div>
       <div class="skill">Canva</div>
       <div class="skill">Zoho CRM</div>
     </section>
@@ -120,10 +116,11 @@
     <section>
       <h2>Profile</h2>
       <p class="summary">
-        Results-driven digital marketer who builds AI-powered landing-page funnels, automations,
-        and paid ad campaigns for a growth-focused startup and its agency clients. Skilled in
-        social media, brand strategy, and CRM, with a strong foundation in sales. Passionate about
-        combining creativity with AI workflows to drive engagement, leads, and conversions.
+        Results-driven digital marketer with hands-on experience using AI tools to build
+        automations, landing pages, and paid ad campaigns for a growth-focused startup.
+        Skilled in social media content, brand strategy, and CRM, with a strong foundation
+        in sales and customer relationship management. Passionate about combining creativity
+        with AI-powered workflows to drive engagement, leads, and conversions.
       </p>
     </section>
 
@@ -136,11 +133,11 @@
           <div class="job-date">Jan 2026 – Present</div>
         </div>
         <ul>
-          <li>Built and deployed high-converting landing-page funnels for agency clients — self-contained sites on GitHub Pages with custom domains, Meta Pixel tracking, multi-step lead-capture forms, webhook automations (Pabbly), countdown timers, and thank-you flows.</li>
-          <li>Delivered <strong>6+ client funnels</strong> across coaching, education, and wellness niches — each with its own branding, offer, and conversion flow.</li>
-          <li>Set up AI-assisted marketing automation to streamline lead capture, follow-ups, and customer journeys.</li>
-          <li>Planned, launched, and optimised Meta (Facebook &amp; Instagram) ad campaigns driving traffic to client funnels, using AI-driven targeting and creative testing.</li>
-          <li>Managed end-to-end social media and tracked funnel performance, iterating on creatives and copy to improve conversions and reduce cost per lead.</li>
+          <li>Built and managed marketing automation workflows using AI tools to streamline lead capture, follow-ups, and customer journeys.</li>
+          <li>Created high-converting landing pages and sales funnels with AI-assisted design and copywriting for workshops and campaigns.</li>
+          <li>Planned, launched, and optimised Meta (Facebook &amp; Instagram) ad campaigns using AI-driven targeting and creative testing.</li>
+          <li>Managed end-to-end social media — content planning, AI-generated creatives, captions, and scheduling to grow reach and engagement.</li>
+          <li>Analysed campaign performance and iterated on ads, funnels, and content to improve conversions and reduce cost per lead.</li>
         </ul>
       </div>
 
@@ -151,7 +148,8 @@
         </div>
         <ul>
           <li>Explained education loan options and flexible fee structures to parents, improving understanding and conversion rates.</li>
-          <li>Handled queries and supported clients throughout the loan process in a fast-paced sales environment.</li>
+          <li>Developed strong interpersonal and persuasion skills in a fast-paced sales environment.</li>
+          <li>Handled queries and supported clients throughout the loan process.</li>
         </ul>
       </div>
 
@@ -162,7 +160,8 @@
         </div>
         <ul>
           <li>Managed and updated customer information efficiently using Zoho CRM.</li>
-          <li>Resolved queries promptly, coordinating with sales, tech, and logistics teams to address requests on time.</li>
+          <li>Resolved customer queries promptly, coordinating with sales, tech, and logistics teams for timely solutions.</li>
+          <li>Ensured all customer requests and complaints were addressed on time.</li>
         </ul>
       </div>
 
@@ -172,7 +171,8 @@
           <div class="job-date">2023 – 2024</div>
         </div>
         <ul>
-          <li>Organised exhibitions including a large-scale event at Haldiram's, Nagpur — handling venue coordination, vendor management, promotions, and on-ground execution.</li>
+          <li>Organised exhibitions and events, including venue coordination, vendor management, and on-ground execution.</li>
+          <li>Contributed to a large-scale exhibition at Haldiram's, Nagpur, handling promotions, client communication, and logistics.</li>
         </ul>
       </div>
     </section>
@@ -196,7 +196,8 @@
       <div class="job">
         <div class="job-title">Marketing Research — Ambuja Cement</div>
         <ul>
-          <li>Conducted a brand analysis of consumer perception, market trends, and competitor strategy; presented findings and recommendations.</li>
+          <li>Conducted a brand analysis studying consumer perception, market trends, and competitor strategy.</li>
+          <li>Presented findings and improvement recommendations in a group presentation.</li>
         </ul>
       </div>
     </section>
